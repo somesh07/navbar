@@ -1,0 +1,129 @@
+:root {
+  font-size: 16px;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Verdana,sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: pink;
+}
+
+.fon {
+  width: 100%;
+  background-color: pink;
+  height: auto;
+  text-align: right;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar {
+  height: auto;
+  padding: 2px;
+  background-color: pink;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-top: 2px;
+  display: inline-flex;
+  padding: 15px;
+}
+
+.searchbox input#search {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border: none;
+  font-size: 15px;
+  color: black;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+a:link, a:visited {
+  background-color: pink;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+a:hover,a:active {
+  background-color: white;
+  text-decoration: underline;
+  color: black;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 630px) {
+
+  .navbar {
+    height: auto;
+    padding: 2px;
+    background-color: pink;
+    width: 100%;
+  }
+
+  .searchbox {
+    display: block;
+    width: 65%;
+  }
+
+  .navbar ul {
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  .fon {
+    display: block;
+    border: 1px;
+    border-color: white;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: pink;
+  }
+}
